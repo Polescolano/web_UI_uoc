@@ -1,0 +1,45 @@
+/* PRESENTATION General properties */
+.nuestraLabor h2{
+    color: rgba(159,204,185, 1);
+    margin: 20px 20px 10px 20px;
+}
+
+  /*
+  *  Especific properties for 500px max resolution of screen 
+  */
+  @media screen and (max-width: 500px) {
+
+    /*   presentation content    */
+    .nuestraLabor{
+      width: 100%;
+    }
+    .nuestraLabor p{
+        margin: 20px;    
+        font-size: 20px;
+    }
+    .nuestraLabor img{
+        width: -webkit-fill-available;
+        vertical-align: middle;
+        height: 390px;
+        margin-top: 20px;
+    }
+  }
+  
+  /*
+  *  Especific properties for 500px min resolution of screen 
+  */
+  @media screen and (min-width: 500px) {
+    
+    /*   presentation content    */
+    .nuestraLabor{
+      width: 50%;
+      margin-left: 25%;
+    }
+    .nuestraLabor img{
+        width: 40%;
+        margin-left: 30%;
+      }
+    .nuestraLabor p{
+        margin: 20px;
+    }
+  }

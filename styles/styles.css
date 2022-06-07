@@ -1,0 +1,470 @@
+/* General properties */
+body{
+  margin: 0px;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+header{
+  width: 100%;
+  margin: 0px;
+}
+header div{
+  float: left;
+}
+footer{
+  width: 100%;
+  background-color: RGB(159,204,185);
+  text-align: center;
+  font-size: 20px;
+}
+footer div{
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+}
+.iconsFooter a{
+  background-repeat:no-repeat;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 30px 0px 10px 0px;
+}
+.insta{
+  background-image: url(../img/insta_icon.png);
+}
+.faceb{
+  background-image: url(../img/faceb_icon.png);
+}
+.yt{
+  background-image: url(../img/yt_icon.png);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.rightsFooter{
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+/*
+*
+*  Especific properties for 500px max resolution of screen 
+*
+*/
+@media screen and (max-width: 500px) {
+  /*    HEADER     */
+  header{
+    width: 100%;
+    height: 160px;
+  }
+  .logoImg{
+    width: 110px;
+    height: 110px;
+  }
+  .logoImg img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  .logoTitle{
+    width: 180px;
+    height: 110px;
+    margin: 0;
+    margin-right: 10px;
+  }
+  header h1{
+    font-size: 50px;
+    margin: 0px;
+    color: RGB(159,204,185);
+  }
+  header p{
+    margin: 0px;
+  }
+  #iconosHeader {
+    margin: 0px;
+    padding-top: 40px;
+    width: 30px;
+    height: 70px;
+  }
+  .user{
+    background-image: url(../img/user_icon.png);
+    display: block;
+    width: 25px;
+    height: 28px;
+  }
+  .chart{
+    background-image: url(../img/chart_icon.png);
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  /* MENU Sandwich manu style for phones  */
+  .menuBox{
+    margin: 10px 0px 0px 10px;
+  }
+  #btn-menu{
+    display: none;
+    width: 25px;  
+    height: 20px;
+  }
+  header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+  }
+  .navegation{
+    position: absolute;
+    background: rgba(159,204,185, 1);
+    width: 60%;
+    margin-left: -65%;
+    z-index: 1;
+  }
+  .navegation ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .submenu li a{
+    margin-left: 30px;
+    
+  }
+  .navegation li{
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .navegation li:hover{
+    background: rgba(0,0,0,0.3);
+  }
+  .navegation li a{
+    display: block;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  #btn-menu:checked ~ .navegation{
+    margin: 0;
+  }
+
+  /* SEARCH INPUT */
+  .search{
+    width: 80%;
+  }
+  .search input[type=text], select{
+    width: 90%;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(159,204,185, 1);
+  }
+  .search input:focus {
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgba(159,204,185, 1);
+  }
+  .search img{
+    margin: 0;
+    position: relative;
+    left: -30px;
+  }
+
+  /*   BODY    */
+  .mainTitle{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 430px;
+  }
+  .mainTitle img{
+    width: -webkit-fill-available;
+    vertical-align: middle;
+    height: 390px;
+    margin-top: 20px;
+  }
+  .webimage{
+    display: none;
+    visibility: hidden;
+  }
+  .mainTitle p{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(159,204,185, 1);
+    text-align: center;
+    position: relative;
+    top: -350px;
+    font-size: 20px;
+  }
+  .mainPresentation{
+    width: 100%;
+    height: 500px;
+  }
+  .mainPresentation h3{
+    width: 100%;
+    font-family: Lucida Calligraphy, Mistral, fantasy;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(220,206,89);
+  }
+  .mainPresentation img{
+    width: -webkit-fill-available;
+    vertical-align: middle;
+  }
+  .OurWork{
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+  }
+  .OurWork h3{
+    color: rgba(159,204,185, 1);
+    margin: 20px 20px 10px 20px;
+  }
+  .OurWork p{
+    text-align: justify;
+    margin: 5px 20px 5px 20px;
+  }
+  .OurWork a{
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    float: right;
+    border: 1px solid rgba(159,204,185, 1);
+    text-decoration: none;
+    color: black;
+  }
+  .OurWork a:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /*   FOOTER    */
+  footer{
+    height: 200px;
+  } 
+}
+
+
+
+
+/*
+*
+*  Especific properties for 500px min resolution of screen 
+*
+*/
+@media screen and (min-width: 500px) {
+  /*    HEADER     */
+  header{
+    width: 100%;
+    height: 160px;
+  }
+  .logoImg{
+    width: 110px;
+    height: 110px;
+    margin-left: 40%;
+    margin-top: 10px;
+  }
+  .logoImg img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  .logoTitle{
+    width: 180px;
+    height: 110px;
+    margin: 10px 10px 0px 10px;
+  }
+  header h1{
+    font-size: 50px;
+    margin: 0px;
+    color: RGB(159,204,185);
+  }
+  header p{
+    margin: 0px;
+  }
+  #iconosHeader {
+    margin: 10px;
+    padding-top: 40px;
+    width: 30px;
+    height: 70px;
+    float: right;
+  }
+  .user{
+    background-image: url(../img/user_icon.png);
+    display: block;
+    width: 25px;
+    height: 28px;
+  }
+  .chart{
+    background-image: url(../img/chart_icon.png);
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  /* MENU Sandwich manu style for phones  */
+  .menuBox{
+    margin: 10px;
+    width: 100%;
+    height: 0px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  #btn-menu{
+    display: none;
+  }
+  header label {
+    display: none;
+  }
+  .navegation{
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+  } 
+  .navegation ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .menu > li{
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+  }
+  .menu > li > a{
+    text-transform: uppercase;
+  }
+  .submenu{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+  }
+  .submenu li a{
+    padding: 5px; 
+    display: block;
+  }
+  .submenu li{
+    border-bottom: 1px solid rgba(159,204,185, 1);
+  }
+  .navegation li:hover{
+    background:  rgba(159,204,185, 1);
+    transition: all .3s;
+  }
+  .navegation li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  .navegation li a:hover{
+    color: #fff;
+    transition: all .3s;
+  }
+  .menu li:hover .submenu{
+    display: block;
+  }
+
+  /* SEARCH INPUT */
+  .search{
+    width: 15%;
+    float: right;    
+    position: relative;
+    top: -40px;
+  }
+  .search input[type=text], select{
+    width: 90%;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(159,204,185, 1);
+  }
+  .search input:focus {
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgba(159,204,185, 1);
+  }
+  .search img{
+    margin: 0;
+    position: relative;
+    left: -30px;
+    top: 15px;
+    float: right;
+  }
+
+  /*   BODY    */
+  .mainTitle{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 430px;
+    text-align: center;
+  }
+  .mainTitle img{
+    width: 30%;
+    vertical-align: middle;
+    height: 390px;
+    margin: 15px;
+  }
+  .mainTitle p{
+    width: 20%;
+    height: 50px;
+    background-color: rgba(159,204,185, 1);
+    position: relative;
+    top: -350px;
+    font-size: 20px;
+    z-index: 2;
+    float: right;
+    margin-right: 20%;
+  }
+  .mainPresentation{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .mainPresentation h3{
+    width: 25%;
+    font-family: Lucida Calligraphy, Mistral, fantasy;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(220,206,89);
+    margin-left: 20%;
+    text-decoration: none;
+  }
+  .mainPresentation img{
+    width: 30%;
+    vertical-align: middle;
+    position: relative;
+    left: 260px;
+    top: -150px;
+  }
+  .OurWork{
+    width: 25%;
+    height: 250px;
+    font-size: 20px;
+    margin-left: 20%;
+  }
+  .OurWork h3{
+    color: rgba(159,204,185, 1);
+    margin: 20px 20px 10px 20px;
+  }
+  .OurWork p{
+    text-align: justify;
+    margin: 5px 20px 5px 20px;
+  }
+  .OurWork a{
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    float: right;
+    border: 1px solid rgba(159,204,185, 1);
+    text-decoration: none;
+    color: black;
+  }
+  .OurWork a:hover {
+    background-color: rgba(159,204,185, 1);
+    color: #fff;
+  }
+
+  /*   FOOTER    */
+  footer{
+    height: 200px;
+  } 
+}

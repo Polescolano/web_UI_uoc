@@ -1,0 +1,112 @@
+/* ADOPT General properties */
+.shopMain h2{
+    color: rgba(159,204,185, 1);
+    margin: 20px 20px 10px 20px;
+}
+.adoptNameTitle{
+    font-weight: bold;
+}
+.animalName{
+    color: rgba(159,204,185, 1);
+    font-weight: bold;
+}
+.shopMain a{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgba(159,204,185, 1);
+    text-decoration: none;
+    color: black;
+  }
+.shopMain a:hover {
+    background-color: rgba(159,204,185, 1);
+    color: #fff;
+}
+.mostrarMas{
+    float: left !important;
+    margin: 20px 20px 20px 35% !important;
+}
+#items{
+    width: 60%;
+    height: 50px;
+    margin-left: 20%;
+    border: 2px solid rgba(0,0,0, 0.2);
+    outline: none;
+    color: rgba(0,0,0, 0.5);
+}
+.itemPrice{
+    color: rgba(159,204,185, 1);
+    margin: 20px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+  /*
+  *  Especific properties for 500px max resolution of screen 
+  */
+  @media screen and (max-width: 500px) {
+
+    /*   presentation content    */
+    .shopMain{
+      width: 100%;
+    }
+    .shopMain div{
+        background-color: rgba(0, 0, 0, 0.05);
+        border-top: 1px solid rgba(159,204,185, 1);
+        border-bottom: 1px solid rgba(159,204,185, 1);
+        margin: 20px 0px 10px 0px;
+        height: 450px;
+    }
+    .shopMain p{
+        margin: 20px 20px 40px 20px;    
+        font-size: 20px;
+    }
+    .shopMain img{
+        width: 80%;
+        vertical-align: middle;
+        height: 50%;
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+    .shopMain div a{
+        float: right;
+        margin: 0px 30px 0px 20px;
+    }
+  }
+  
+  /*
+  *  Especific properties for 500px min resolution of screen 
+  */
+  @media screen and (min-width: 500px) {
+    
+    /*   presentation content    */
+    .shopMain{
+      width: 50%;
+      margin-left: 25%;
+    }
+    .shopMain div{
+        background-color: rgba(0, 0, 0, 0.05);
+        border-top: 1px solid rgba(159,204,185, 1);
+        border-bottom: 1px solid rgba(159,204,185, 1);
+        margin: 20px 0px 10px 0px;
+        height: 200px;
+    }
+    .shopMain img{
+        height: 100%;
+        margin-right: 20px;
+        float: left;
+      }
+    .shopMain p{
+        margin: 20px 20px 40px 20px;    
+        font-size: 20px;
+    }
+    .buttn{
+        margin-right: 10%;
+        float: right;
+    }
+    #items{
+        width: 20%;
+        height: 50px;
+        margin-left: 80%;
+    }
+    .mostrarMas{
+        margin: 20px 20px 20px 45% !important;
+    }
+  }

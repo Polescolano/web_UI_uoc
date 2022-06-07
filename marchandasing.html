@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Shop RAAB</title>
+<meta name="description" content="pagina principal refugio animales" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" media="screen and (min-width: 0px)" href="styles/styles.css" />
+<link rel="stylesheet" media="screen and (min-width: 0px)" href="styles/merchandasing.css" />
+</head>
+
+<body>
+	<div class="container">		
+         <!-- Web Header content -->
+		<header>
+            <!-- Logo and user/chart icon menus -->
+            <div class="logoImg">
+                <img src="img/logo.png" alt="logo RAAB" >
+            </div>
+            <div class="logoTitle">
+                <div>
+                    <H1>RAAB</H1>
+                    <p>Refugio de animales abandonados de Barcelona</p>
+                </div>
+            </div>
+            <div id="iconosHeader">
+                <a class="user" href="#" ></a>
+            </div>
+            <div id="iconosHeader">
+                <a class="chart" href="#" ></a>
+            </div>
+            <div style="clear:both; height: 0px; margin: 0px;"></div>
+            <!-- Menu desplegable/horizontal -->
+            <div class="menuBox">
+                <!-- Boto/icona menu desplegable (sanwich menu)-->
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu">
+                    <img src="img/menu_icon.png" alt="">
+                </label>
+                <!-- menu desplegable-->
+                <nav class="navegation">
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="presentacion.html">Nuestra labor</a>
+                            <ul class="submenu">
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Instalaciones</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="adopt.html">Adopta</a>
+                            <ul class="submenu">
+                                <li><a href="adopt.html">Gatos</a></li>
+                                <li><a href="#">Perros</a></li>
+                                <li><a href="#">Otros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Colabora</a>
+                            <ul class="submenu">
+                                <li><a href="#">Colaborador</a></li>
+                                <li><a href="#">Apadrina</a></li>
+                                <li><a href="#">Donativos</a></li>
+                                <li><a href="#">Lista de Amazon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacto y rescates</a></li>
+                        <li><a href="marchandasing.html">Tienda benéfica</a>
+                            <ul class="submenu">
+                                <li><a href="marchandasing.html">Mostrar todo</a></li>
+                                <li><a href="marchandasing.html">Ropa</a></li>
+                                <li><a href="#">Complementos</a></li>
+                                <li><a href="#">Libros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="Busca aquí"> 
+                <img src="img/search_icon.png" alt="">
+            </div>
+		</header>
+        <!-- This div cleans Header elements floats -->
+        <div style="clear:both; height: 0px; margin: 0px;"></div>
+        <!-- Web main content -->
+		<main> 
+			<article class="shopMain">
+                <h2>Tienda banéfica</h2>
+                <p>Todo el dinero recaudado va a intregramente al refugio, para los animales, sus cuidados y necesidades.<br>¡Gracias por ayudar!</p>
+                <select name="items" id="items">
+                  <option value="todo">Organizar por</option>
+                  <option value="Todo">Todo</option>
+                  <option value="Ropa">Ropa</option>
+                  <option value="Complementos">Complementos</option>
+                  <option value="Libros">Libros</option>
+                </select>
+                <div>
+                    <img src="img/Camiseta-negra.jpg" alt="Camiseta-negra">
+                    <p>Camisa negra con el logo del refugio de manga corta para hombre<br>#AdoptRAAB</p>
+                    <span class="itemPrice">19,90€</span>
+                    <a class="buttn" href="#">Saber más</a>
+                </div>
+				<div>
+                    <img src="img/Camiseta-negra.jpg" alt="Camiseta-negra">
+                    <p>Camisa negra con el logo del refugio de manga corta para hombre<br>#AdoptRAAB</p>
+                    <span class="itemPrice">19,90€</span>
+                    <a class="buttn" href="#">Saber más</a>
+                </div>
+                <a class="mostrarMas buttn" href="#">Mostrar más</a>
+			</article>
+		</main>
+        <!-- Web Footer content -->
+		<footer style="clear:both;">
+            <div class="iconsFooter">
+                <a class="insta" href="#" ></a>
+                <a clas="faceb" href="#" ></a>
+                <a class="yt" href="#" ></a>
+            </div>
+            <div class="polFooter">
+                <a href="#">Políticas de la página</a>
+            </div>
+            <div class="rightsFooter">
+                <i>@2022 Refugi d'animals abandonats de Barcelona</i>
+            </div>
+		</footer>
+	</div>
+</body>
+</html>
