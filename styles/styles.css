@@ -81,7 +81,7 @@ a{
   header p{
     margin: 0px;
   }
-  #iconosHeader {
+  .iconosHeader {
     margin: 0px;
     padding-top: 40px;
     width: 30px;
@@ -282,7 +282,7 @@ a{
   header p{
     margin: 0px;
   }
-  #iconosHeader {
+  .iconosHeader {
     margin: 10px;
     padding-top: 40px;
     width: 30px;
